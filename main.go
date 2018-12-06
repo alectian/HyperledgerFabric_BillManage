@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/kongyixueyuan.com/bill/blockchain"
-	"github.com/kongyixueyuan.com/bill/service"
+	"github.com/alec/bill/blockchain"
+	"github.com/alec/bill/service"
 	"os"
 	"encoding/json"
 )
@@ -18,12 +18,12 @@ func main() {
 
 		// 通道相关 
 		ChannelID:     "mychannel",
-		ChannelConfig: os.Getenv("GOPATH") + "/src/github.com/kongyixueyuan.com/bill/fixtures/artifacts/channel.tx",
+		ChannelConfig: os.Getenv("GOPATH") + "/src/github.com/alec/bill/fixtures/artifacts/channel.tx",
 
 		// 链码相关参数
 		ChaincodeID:     "billcc",
 		ChaincodeGoPath: os.Getenv("GOPATH"),
-		ChaincodePath:   "github.com/kongyixueyuan.com/bill/chaincode/",
+		ChaincodePath:   "github.com/alec/bill/chaincode/",
 
 		// 指定用户
 		UserName: "User1",
